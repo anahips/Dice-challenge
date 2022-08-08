@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+<li class="day" temperature="19">Monday</li>
+<script>
+function showWeather() {
+  console.log(this.getAttribute("temperature"));
+}
+
+let elements = document.querySelectorAll(".day");
+elements.forEach(function(element, index) {
+  element.addEventListener("click", showWeather);
+});
+</script>
+</body>
+</html>

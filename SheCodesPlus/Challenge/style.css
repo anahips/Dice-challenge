@@ -1,0 +1,44 @@
+body {
+  max-width: 50%;
+  border: black 1px solid;
+  padding: 20px 20px;
+  margin: 60px 200px;
+  position: fixed;
+}
+
+.containerToday {
+  margin: 20px 50px 0 50px;
+}
+
+.moonImage {
+  color: darkblue;
+  font-size: 90px;
+}
+
+.temperature {
+  font-size: 20px;
+}
+
+.location {
+  font-size: 25px;
+  border-left: 1px solid black;
+}
+
+.containerDaily {
+  padding: 20px 10px;
+  margin: 30px 10px 0 10px;
+}
+.card {
+  text-align: center;
+  padding: 10px 0 0 0;
+}
+
+.card .sunIcon {
+  font-size: 30px;
+  color: yellow;
+}
+
+.searchBar {
+  padding: 20px 10px 0 10px;
+  margin: 60px 100px 10px 100px;
+}

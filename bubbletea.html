@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bubble Tea</title>
+    <style>
+      body {
+        background-image: url(https://images.unsplash.com/photo-1566486106118-e1c24ad08802?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80);
+        background-size: cover;
+      }
+      .main {
+        width: 50%;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        border: #7fcdff solid 2px;
+        border-radius: 15px;
+        margin: 30px auto;
+        background: white;
+        opacity: 0.95;
+      }
+
+      h1 {
+        text-align: center;
+        color: #064273;
+        margin: 30px 0 5px 0;
+        font-size: 3em;
+      }
+
+      h2 {
+        text-align: center;
+        color: #58b3d3;
+        margin: 5px;
+        font-weight: ;
+      }
+
+      hr {
+        border-block-color: #7fcdff;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        padding: 10px 0px 0px 0px;
+        max-width: 300px;
+      }
+
+      .description {
+        text-align: justify;
+        color: #438b9a;
+        margin: 20px 30px;
+        font-size: 15px;
+        line-height: 25px;
+      }
+
+      p {
+        text-align: center;
+        font-size: 11px;
+        font-style: italic;
+        padding: 10px;
+        color: #5e96a2;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+        background: #58b3d3;
+        border: #58b3d3 1px;
+        border-radius: 15px;
+        color: white;
+        box-shadow: 4px 3px 5px #064273;
+      }
+
+      button:hover {
+        background: white;
+        color: #58b3d3;
+        transition: all 350ms ease-in-out;
+        opacity: 0.9;
+        border: #58b3d3 1px solid;
+        cursor: pointer;
+      }
+
+      a:-webkit-any-link {
+        color: #064273;
+        text-decoration: none;
+      }
+
+      footer {
+        text-align: center;
+        margin: 15px;
+        font-size: 10px;
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h1>Bubble Tea</h1>
+      <h2>Cool down with this refreshing summer drink</h2>
+      <hr />
+      <img
+        src="https://www.honestfoodtalks.com/wp-content/uploads/2021/07/Best-boba-LA-768x768.jpg"
+      />
+      <div class="description">
+        Bubble tea (also known as pearl milk tea, bubble milk tea, tapioca milk
+        tea, or boba tea or boba) is a tea-based drink that originated in Taiwan
+        in the early 1980s. It most commonly consists of tea accompanied by
+        chewy tapioca balls ("boba" or "pearls"), but it can be made with other
+        toppings as well. Bubble tea has many varieties and flavors, but the two
+        most popular varieties are black pearl milk tea and green pearl milk tea
+        ("pearl" signifies the tapioca balls at the bottom).
+      </div>
+      <p>
+        👉Check out this
+        <a href="https://www.honestfoodtalks.com/bubble-tea-london-best/"
+          >bubble tea guide in London</a
+        >
+      </p>
+      <button>I want one! 😎</button>
+      <footer>Coded by Ana Hip</footer>
+    </div>
+    <script>
+      function orderTea() {
+        let name = prompt("What is your name?");
+        let address = prompt("where do you live");
+        let amount = prompt("How many bubble tea do you want?");
+        if (amount > 5) {
+          alert("Sorry, we cannot deliver");
+        } else {
+          alert(
+            "Thanks " +
+              name +
+              ", we will deliver " +
+              amount +
+              " bubble teas to " +
+              address
+          );
+        }
+      }
+
+      let orderTeaButton = document.querySelector("button");
+      orderTeaButton.addEventListener("click", orderTea);
+    </script>
+  </body>
+</html>

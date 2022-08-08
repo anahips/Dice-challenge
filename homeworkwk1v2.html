@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <style>
+      body {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+      }
+
+      h1 {
+        color: #1a64d6;
+        margin: 26px 0px 5px 0px;
+      }
+
+      h2 {
+        margin: 0px 0px 10px 0px;
+        font-weight: normal;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0px;
+        margin: 10px;
+      }
+      li {
+        padding: 20px;
+        max-width: 300px;
+        margin: 0 auto;
+      }
+      .day {
+        font-weight: bold;
+        margin: 5px;
+      }
+      .temperature {
+        font-family: monospace;
+        font-size: 18px;
+        opacity: 75%;
+        padding: 10px;
+      }
+      li:hover {
+        background-color: hsla(57, 25%, 79%, 0.2);
+        padding: 20px 0px 20px 0px;
+        transition: all 200ms ease-in-out;
+        border-radius: 12px;
+      }
+      button {
+        margin: 10px;
+        padding: 20px;
+        background-color: #1a64d6;
+        color: white;
+        font-size: 15px;
+        border: 1px solid #1a64d6;
+        border-radius: 25px;
+        box-shadow: rgb(37 39 89 / 8%) 0px 8px 8px 0;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: white;
+        color: #1a64d6;
+        border: 1px solid #1a64d6;
+        transition: all 200ms ease-in-out;
+      }
+      .developername {
+        font-size: 15px;
+        font-family: monospace;
+        opacity: 75%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <div>🌤️</div>
+      Currently 21°in Tokyo
+    </h1>
+    <h2>13° / <strong>23°</strong></h2>
+    <ul>
+      <li>
+        <div class="day">🌧️Tomorrow</div>
+        <div class="temperature">10° /<strong> 22°</strong></div>
+      </li>
+      <li>
+        <div class="day">☁️Saturday</div>
+        <div class="temperature">15° /<strong> 17°</strong></div>
+      </li>
+      <li>
+        <div class="day">☀️Sunday</div>
+        <div class="temperature">25° /<strong> 28°</strong></div>
+      </li>
+    </ul>
+    <button>Change city</button>
+    <div class="developername">Coded by Ana Hipolito</div>
+  </body>
+</html>
